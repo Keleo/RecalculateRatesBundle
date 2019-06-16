@@ -33,7 +33,3 @@ You could also [download it as zip](https://github.com/keleo/RecalculateRatesBun
 │   ├── RecalculateRatesBundle.php
 |   └ ... more files and directories follow here ... 
 ```
-
-## Screenshot
-
-![Screenshot](https://raw.githubusercontent.com/Keleo/RecalculateRatesBundle/master/screenshot.jpg)

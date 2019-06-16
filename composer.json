@@ -1,6 +1,6 @@
 {
     "name": "keleo/recalculate-rates-bundle",
-    "description": "A Kimai 2 plugin, which forces timesheet records on every update to recalculate the rates.",
+    "description": "A Kimai 2 plugin, which forces to recalculate the hourly/fixed rate on every timesheet update.",
     "homepage": "https://www.kimai.org/store/recalculate-rates-bundle.html",
     "type": "kimai-plugin",
     "require": {
