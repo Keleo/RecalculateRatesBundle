@@ -1,0 +1,28 @@
+{
+    "name": "keleo/recalculate-rates-bundle",
+    "description": "A Kimai 2 plugin, which forces timesheet records on every update to recalculate the rates.",
+    "homepage": "https://www.kimai.org/store/recalculate-rates-bundle.html",
+    "type": "kimai-plugin",
+    "require": {
+        "kimai/kimai2-composer": "*"
+    },
+    "keywords": [
+        "kimai",
+        "kimai-plugin"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Papst",
+            "email": "kpapst@gmx.net",
+            "homepage": "https://www.keleo.de"
+        }
+    ],
+    "extra": {
+        "kimai": {
+            "require": "0.9",
+            "version": "0.1",
+            "name": "RecalculateRatesBundle"
+        }
+    }
+}
