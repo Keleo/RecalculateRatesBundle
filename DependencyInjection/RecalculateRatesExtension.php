@@ -18,6 +18,10 @@ class RecalculateRatesExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
+        if ('test' === $container->getParameter('kernel.environment')) {
+            return;
+        }
+
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yaml');
     }
