@@ -1,7 +1,8 @@
 <?php
 
 /*
- * This file is part of the Kimai RecalculateRatesBundle.
+ * This file is part of the RecalculateRatesBundle for Kimai 2.
+ * All rights reserved by Kevin Papst (www.keleo.de).
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -13,12 +14,9 @@ use App\Entity\Timesheet;
 use App\Timesheet\Calculator\RateCalculator;
 use App\Timesheet\CalculatorInterface;
 
-class RecalculateRateCalculator implements CalculatorInterface
+final class RecalculateRateCalculator implements CalculatorInterface
 {
-    /**
-     * @var RateCalculator
-     */
-    protected $calculator;
+    private $calculator;
 
     public function __construct(RateCalculator $calculator)
     {
@@ -27,12 +25,14 @@ class RecalculateRateCalculator implements CalculatorInterface
 
     /**
      * @param Timesheet $record
+     * @return void
      */
     public function calculate(Timesheet $record)
     {
         if (null !== $record->getHourlyRate()) {
             $record->setHourlyRate(null);
         }
+
         if (null !== $record->getFixedRate()) {
             $record->setFixedRate(null);
         }

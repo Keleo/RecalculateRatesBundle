@@ -1,7 +1,8 @@
 <?php
 
 /*
- * This file is part of the Kimai RecalculateRatesBundle.
+ * This file is part of the RecalculateRatesBundle for Kimai 2.
+ * All rights reserved by Kevin Papst (www.keleo.de).
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -16,6 +17,12 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 class RecalculateRatesExtension extends Extension
 {
+    /**
+     * @param array $configs
+     * @param ContainerBuilder $container
+     * @return void
+     * @throws \Exception
+     */
     public function load(array $configs, ContainerBuilder $container)
     {
         if ('test' === $container->getParameter('kernel.environment')) {

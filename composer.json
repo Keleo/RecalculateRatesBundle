@@ -3,9 +3,7 @@
     "description": "A Kimai 2 plugin, which forces to recalculate the hourly/fixed rate on every timesheet update.",
     "homepage": "https://www.kimai.org/store/recalculate-rates-bundle.html",
     "type": "kimai-plugin",
-    "require": {
-        "kimai/kimai2-composer": "*"
-    },
+    "version": "0.2",
     "keywords": [
         "kimai",
         "kimai-plugin"
@@ -21,8 +19,33 @@
     "extra": {
         "kimai": {
             "require": "0.9",
-            "version": "0.1",
+            "version": "0.2",
             "name": "RecalculateRatesBundle"
         }
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "codestyle": "vendor/bin/php-cs-fixer fix --dry-run --verbose --show-progress=none",
+        "codestyle-fix": "vendor/bin/php-cs-fixer fix",
+        "codestyle-check": "vendor/bin/php-cs-fixer fix --dry-run --verbose --config=.php_cs.dist --using-cache=no --show-progress=none --format=checkstyle",
+        "phpstan": "vendor/bin/phpstan analyse . -c phpstan.neon --level=7",
+        "linting": [
+            "composer validate",
+            "@codestyle-check",
+            "@phpstan"
+        ]
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "kevinpapst/kimai2": "1.11",
+        "phpstan/phpstan": "^0.12",
+        "phpstan/phpstan-symfony": "^0.12",
+        "symfony/console": "^4.0",
+        "symfony/event-dispatcher": "^4.0"
     }
 }
