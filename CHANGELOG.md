@@ -1,11 +1,12 @@
 # Changelog
 
-## 0.2 (unreleased) 
+## 0.2 
 
 - Added GitHub actions for basic CI
 - Code Styles
+- Reset "internal rates" in newer Kimai versions
   
-Compatible with Kimai 0.9
+Compatible with Kimai > 1.9
 
 ## 0.1 
 
