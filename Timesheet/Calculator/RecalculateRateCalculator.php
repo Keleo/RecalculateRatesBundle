@@ -37,6 +37,10 @@ final class RecalculateRateCalculator implements CalculatorInterface
             $record->setFixedRate(null);
         }
 
+        if (null !== $record->getInternalRate()) {
+            $record->setInternalRate(null);
+        }
+
         // we have to trigger it again, as there is no order defined for the calculator
         $this->calculator->calculate($record);
     }
