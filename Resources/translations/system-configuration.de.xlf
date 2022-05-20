@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="de" datatype="plaintext" original="system-configuration.en.xlf">
+    <body>
+      <trans-unit id="rH7H.bA" resname="label.recalculate">
+        <source>label.recalculate</source>
+        <target>Preisneuberechnung</target>
+      </trans-unit>
+      <trans-unit id="GLQB2Tb" resname="label.recalculate.mode">
+        <source>label.recalculate.mode</source>
+        <target>Modus für Preisneuberechnung</target>
+      </trans-unit>
+      <trans-unit id="nQcA1bA" resname="recalculate.mode.off">
+        <source>recalculate.mode.off</source>
+        <target>Aus</target>
+      </trans-unit>
+      <trans-unit id="hjnOnzm" resname="recalculate.mode.always">
+        <source>recalculate.mode.always</source>
+        <target>Bei jeder Änderung</target>
+      </trans-unit>
+      <trans-unit id="J1cndMp" resname="recalculate.mode.default">
+        <source>recalculate.mode.default</source>
+        <target>Bei Änderung von Kunde, Projekt, Tätigkeit, Benutzer oder Preis</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
