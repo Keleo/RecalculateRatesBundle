@@ -28,6 +28,10 @@ final class RecalculateRateCalculator implements CalculatorInterface
         $this->systemConfiguration = $systemConfiguration;
     }
 
+    /**
+     * @param Timesheet $record
+     * @return void
+     */
     public function calculate(Timesheet $record)
     {
         $mode = $this->systemConfiguration->find('timesheet.recalculate.mode');
