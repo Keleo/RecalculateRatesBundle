@@ -1,9 +1,9 @@
 {
     "name": "keleo/recalculate-rates-bundle",
-    "description": "A Kimai 2 plugin, which forces to recalculate the hourly/fixed rate on every timesheet update.",
+    "description": "A Kimai plugin, which forces recalculation of hourly/fixed rates on timesheet update.",
     "homepage": "https://www.kimai.org/store/keleo-recalculate-rates-bundle.html",
     "type": "kimai-plugin",
-    "version": "0.2",
+    "version": "1.0",
     "keywords": [
         "kimai",
         "kimai-plugin"
@@ -12,18 +12,29 @@
     "authors": [
         {
             "name": "Kevin Papst",
-            "email": "kpapst@gmx.net",
+            "email": "kevin@kevinpapst.de",
             "homepage": "https://www.keleo.de"
         }
     ],
     "extra": {
         "kimai": {
-            "require": "0.9",
-            "version": "0.2",
+            "require": "1.20.1",
             "name": "RecalculateRatesBundle"
         }
     },
+    "autoload": {
+        "psr-4": {
+            "KimaiPlugin\\InvoiceBundle\\": ""
+        }
+    },
     "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": false,
+            "symfony/flex": false
+        },
+        "platform": {
+            "php": "7.3"
+        },
         "preferred-install": {
             "*": "dist"
         },
@@ -32,19 +43,19 @@
     "scripts": {
         "codestyle": "vendor/bin/php-cs-fixer fix --dry-run --verbose --show-progress=none",
         "codestyle-fix": "vendor/bin/php-cs-fixer fix",
-        "codestyle-check": "vendor/bin/php-cs-fixer fix --dry-run --verbose --config=.php_cs.dist --using-cache=no --show-progress=none --format=checkstyle",
-        "phpstan": "vendor/bin/phpstan analyse . -c phpstan.neon --level=7",
+        "codestyle-check": "vendor/bin/php-cs-fixer fix --dry-run --verbose --using-cache=no --show-progress=none --format=checkstyle",
+        "phpstan": "vendor/bin/phpstan analyse . -c phpstan.neon --level=9",
         "linting": [
-            "composer validate",
+            "composer validate --strict --no-check-version",
             "@codestyle-check",
             "@phpstan"
         ]
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.15",
-        "kevinpapst/kimai2": ">1.9",
-        "phpstan/phpstan": "^0.12",
-        "phpstan/phpstan-symfony": "^0.12",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "kevinpapst/kimai2": "^1.20",
+        "phpstan/phpstan": "^1.0",
+        "phpstan/phpstan-symfony": "^1.0",
         "symfony/console": "^4.0",
         "symfony/event-dispatcher": "^4.0"
     }

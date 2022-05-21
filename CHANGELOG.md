@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0
+
+Compatible with Kimai 1.20.1
+
+- Added "default" mode to recalculate ONLY if one of the fields is changed: customer, project, activity, user, price
+- Select recalculate mode: off, default, always
+
 ## 0.2 
 
 - Added GitHub actions for basic CI

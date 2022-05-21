@@ -1,9 +1,9 @@
 includes:
-    - vendor/phpstan/phpstan-symfony/extension.neon
-    - vendor/phpstan/phpstan-symfony/rules.neon
+    - %rootDir%/../phpstan-symfony/extension.neon
+    - %rootDir%/../phpstan-symfony/rules.neon
 
 parameters:
-    excludes_analyse:
+    excludePaths:
         - vendor/
     treatPhpDocTypesAsCertain: false
     inferPrivatePropertyTypeFromConstructor: true

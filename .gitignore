@@ -1,5 +1,5 @@
-.gitignore
 .idea
-.php_cs.cache
+.disabled
+/vendor/
+.php-cs-fixer.cache
 composer.lock
-vendor/
