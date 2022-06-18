@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0
+
+Compatible with Kimai 2.0
+
+- Code compatibility
+- Removed fallback code for old versions
+
 ## 1.0
 
 Compatible with Kimai 1.20.1

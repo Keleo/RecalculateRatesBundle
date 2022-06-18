@@ -6,4 +6,5 @@ services:
 
     KimaiPlugin\RecalculateRatesBundle\:
         resource: '../../*'
-        exclude: '../../{Resources}'
+        exclude:
+            - '../../Resources/'

@@ -30,8 +30,7 @@ final class SystemConfigurationSubscriber implements EventSubscriberInterface
 
     public function onSystemConfiguration(SystemConfigurationEvent $event): void
     {
-        $newConfiguration = (new Configuration())
-            ->setName('timesheet.recalculate.mode')
+        $newConfiguration = (new Configuration('timesheet.recalculate.mode'))
             ->setLabel('recalculate.mode')
             ->setRequired(true)
             ->setTranslationDomain('system-configuration')

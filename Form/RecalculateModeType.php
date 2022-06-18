@@ -19,20 +19,15 @@ class RecalculateModeType extends AbstractType
 {
     public function configureOptions(OptionsResolver $resolver): void
     {
-        $modes = ['recalculate.mode.off' => null];
-
-        /* @phpstan-ignore-next-line */
-        if (\defined('App\Constants::VERSION_ID') && Constants::VERSION_ID > 12000) {
-            $modes['recalculate.mode.default'] = 'default';
-        }
-
-        $modes['recalculate.mode.always'] = 'always';
-
         $resolver->setDefaults([
             'required' => true,
             'multiple' => false,
             'label' => 'kiosk.login_type',
-            'choices' => $modes,
+            'choices' => [
+                'recalculate.mode.off' => null,
+                'recalculate.mode.default' => 'default',
+                'recalculate.mode.always' => 'always'
+            ],
         ]);
     }
 
