@@ -2,12 +2,12 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en" target-language="de" datatype="plaintext" original="system-configuration.en.xlf">
     <body>
-      <trans-unit id="rH7H.bA" resname="label.recalculate">
-        <source>label.recalculate</source>
+      <trans-unit id="Ieqfi5X" resname="recalculate">
+        <source>recalculate</source>
         <target>Preisneuberechnung</target>
       </trans-unit>
-      <trans-unit id="GLQB2Tb" resname="label.recalculate.mode">
-        <source>label.recalculate.mode</source>
+      <trans-unit id="IkWDeu9" resname="recalculate.mode">
+        <source>recalculate.mode</source>
         <target>Modus für Preisneuberechnung</target>
       </trans-unit>
       <trans-unit id="nQcA1bA" resname="recalculate.mode.off">
