@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="hr" datatype="plaintext" original="system-configuration.en.xlf">
+    <body>
+      <trans-unit id="rH7H.bA" resname="label.recalculate">
+        <source>label.recalculate</source>
+        <target>Ponovno izračunavanje cijena</target>
+      </trans-unit>
+      <trans-unit id="GLQB2Tb" resname="label.recalculate.mode">
+        <source>label.recalculate.mode</source>
+        <target>Modus za ponovno izračunavanje cijena</target>
+      </trans-unit>
+      <trans-unit id="nQcA1bA" resname="recalculate.mode.off">
+        <source>recalculate.mode.off</source>
+        <target>Isključeno</target>
+      </trans-unit>
+      <trans-unit id="hjnOnzm" resname="recalculate.mode.always">
+        <source>recalculate.mode.always</source>
+        <target>Pri svakom aktualiziranju</target>
+      </trans-unit>
+      <trans-unit id="J1cndMp" resname="recalculate.mode.default">
+        <source>recalculate.mode.default</source>
+        <target>Pri svakom aktualiziranju kupca, projekta, aktivnosti, korisnika ili cijene</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
