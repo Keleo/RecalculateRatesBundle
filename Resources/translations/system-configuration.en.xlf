@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="hjnOnzm" resname="recalculate.mode.always">
         <source>recalculate.mode.always</source>
-        <target>With every update</target>
+        <target>With every update (Attention: can falsify history)</target>
       </trans-unit>
       <trans-unit id="J1cndMp" resname="recalculate.mode.default">
         <source>recalculate.mode.default</source>
