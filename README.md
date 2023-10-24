@@ -1,3 +1,10 @@
+
+> [!IMPORTANT]  
+> This plugin was made for Kimai 1.x.  
+> The features of this bundle were incorporated into the core system and are now available in Kimai 2.x.
+
+---
+
 # Recalculate-Rates plugin for Kimai
 
 A Kimai plugin, which forces a recalculation of the hourly and fixed rates for timesheet records on certain updates.
